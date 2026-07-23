@@ -36,7 +36,7 @@ html, body {
   -webkit-font-smoothing: antialiased;
 }
 
-.pagina { max-width: 640px; width: 100%; margin: 0 auto; padding: 44px 22px 64px; overflow-x: hidden; }
+.pagina { max-width: 640px; width: 100%; margin: 0 auto; padding: 44px 22px 64px; }
 
 .intestazione {
   display: flex; flex-direction: column; align-items: center;
@@ -133,13 +133,12 @@ h2.sezione {
   gap: 16px;
   max-width: 100%;
   overflow-x: auto;
-  scroll-snap-type: x mandatory;
   padding: 4px 0 16px;
   -webkit-overflow-scrolling: touch;
   cursor: grab;
   user-select: none;
 }
-.galleria.trascinando { cursor: grabbing; scroll-snap-type: none; }
+.galleria.trascinando { cursor: grabbing; }
 .galleria::-webkit-scrollbar { height: 6px; }
 .galleria::-webkit-scrollbar-thumb { background: var(--blu-tenue-bordo); border-radius: 3px; }
 .freccia {
@@ -166,7 +165,6 @@ h2.sezione {
    lo scroll a dito resta il modo naturale di scorrere */
 @media (max-width: 560px) { .freccia { display: none; } }
 .galleria img {
-  scroll-snap-align: start;
   flex: 0 0 auto;
   height: 420px;
   border-radius: 18px;
